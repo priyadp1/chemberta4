@@ -128,7 +128,7 @@ def test_olmo_classification(smiles_regression_dataset):
     assert prediction.shape == (dataset.y.shape[0], 2)
 
 
-@pytest.mark.torch
+# @pytest.mark.torch
 def test_chemberta_save_reload(tmpdir):
     """Test that a saved checkpoint is restored with identical model weights."""
     tokenizer_path = 'allenai/olmo-7b-hf'

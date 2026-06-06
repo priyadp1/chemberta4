@@ -2,7 +2,6 @@ from typing import Dict, Any, Tuple, Optional
 from deepchem.models.torch_models import HuggingFaceModel
 from peft import LoraConfig, TaskType, get_peft_model, prepare_model_for_kbit_training
 from transformers import AutoModel, AutoModelForCausalLM, AutoTokenizer, OlmoConfig, OlmoForCausalLM, BitsAndBytesConfig
-from deepchem.models.torch_models.olmo_layers import OlmoForSequenceClassification
 from transformers.modeling_utils import PreTrainedModel
 try:
     import torch
